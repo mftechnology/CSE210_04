@@ -11,14 +11,14 @@ BYU
   * To play anytimes that you want. Good luck!
 
 ## Project Structure
-
+```
 root                  (project root folder)
 +-- Director.py          (specific classes)
 +-- Cards.py             (specific classes)
 +-- __main__.py          (main program)
 +-- README.md           (general info)
 +-- Hilo_Designer.docx  (designer project)
-
+````
 
 ## Author
 Marcelo Santos Duarte
