@@ -18,7 +18,7 @@ root                  (project root folder)
 +-- __main__.py          (main program)
 +-- README.md           (general info)
 +-- Hilo_Designer.docx  (designer project)
-````
+```
 
 ## Author
 Marcelo Santos Duarte

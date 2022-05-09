@@ -40,7 +40,7 @@ class Director:
         while not self.is_stoping:
             self.showResult()
             self.guess_hi_or_lo()
-            self.stopGame()
+            self.stopGame(self.score)
 
     def showResult(self):
       
@@ -54,7 +54,7 @@ class Director:
         
 
         if(choice == "l"):
-            if(self.cardnum2 < self.cardnum1):
+            if(self.cardnum2 <= self.cardnum1):
                 self.score += 100
                 print("You guessed!")
             else:
@@ -62,7 +62,7 @@ class Director:
                 print("You didn't guess!")
             
         elif(choice == "h"):
-            if(self.cardnum2 > self.cardnum1):
+            if(self.cardnum2 >= self.cardnum1):
                 self.score += 100
                 print("You guessed!")
             else:
@@ -78,13 +78,15 @@ class Director:
         print("------------------------")
         
       #  print(f"teste guess_hi_or_lo: Total Score is: {self.total_score}")
-    def stopGame(self):
-        tryagain = input("Did you play again? [y or n]: ")
-        if tryagain == "n" or tryagain == "N":
+    def stopGame(self,score):
+       
+        if tryagain == "n" or tryagain == "N" or score == 0:
             self.is_stoping = True
+            print("Thanks for played!")
             print()
             print("-----------------END GAME ---------------------------")
         else:
+            tryagain = input("Did you play again? [y or n]: ")
             newcard1 = Cards()
             self.cardnum1 =  newcard1.cardnumber
             newcard2 = Cards()
