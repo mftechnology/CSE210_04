@@ -44,13 +44,13 @@ class Director:
 
     def showResult(self):
       
-        print(f"The card sorted is: {self.cardnum1}")
+        print(f"The card number: {self.cardnum1}")
            
 
     def guess_hi_or_lo(self):
         print("------------------------")
         print()
-        choice = input("Higher or lower? You must enter 'h' or 'l' ").lower()
+        choice = input("The next cards will be Higher or lower? You must enter 'h' or 'l' ").lower()
         
 
         if(choice == "l"):
@@ -71,15 +71,15 @@ class Director:
 
         
       #  self.total_score += self.score
-        print(f"Card sort: {self.cardnum1}")
-        print(f"The next card was: {self.cardnum2}")
+        print(f"Card number: {self.cardnum1}")
+        print(f"The next card number was: {self.cardnum2}")
         print(f"teste guess_hi_or_lo: Score is: {self.score}")
         print()
         print("------------------------")
         
       #  print(f"teste guess_hi_or_lo: Total Score is: {self.total_score}")
     def stopGame(self):
-        tryagain = input("teste stopGame: Did you play again? [y or n]: ")
+        tryagain = input("Did you play again? [y or n]: ")
         if tryagain == "n" or tryagain == "N":
             self.is_stoping = True
             print()
