@@ -2,7 +2,7 @@
 WEEK04 - Hilo Game 
 BYU 
 
-# Game Instructions:
+## Game Instructions:
   1.The computer will be sorted an card number of a list cards 1 at 13.
   2. You made guess the next card number that will be sorted.
   3. If number that you guess were lower use "l" or to higher use "h".
@@ -10,7 +10,7 @@ BYU
   5. You score inicial is 300 points.
   6. To play anytimes that you want. Good luck!
 
-#Project Structure
+## Project Structure
 
 root                  (project root folder)
 +-- Director.py          (specific classes)
@@ -20,5 +20,5 @@ root                  (project root folder)
 +-- Hilo_Designer.docx  (designer project)
 
 
-#Author
+## Author
 Marcelo Santos Duarte
