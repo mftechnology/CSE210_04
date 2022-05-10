@@ -6,10 +6,10 @@ class Director:
     The responsibility of a Director is to control the sequence of play.
 
     Attributes:
-        dice (List[Die]): A list of Die instances.
-        is_playing (boolean): Whether or not the game is being played.
+        cardnum1 and cardnum2 are objects of the classe Cards()
+        is_stoping (boolean): Whether or not the game is being played.
         score (int): The score for one round of play.
-        total_score (int): The score for the entire game.
+        
     """
 
     def __init__(self):
@@ -33,6 +33,9 @@ class Director:
         
         Args:
             self (Director): an instance of Director.
+            self show result : show the card selected from random on the Card class
+            self guess_hi_or_lo : calculate score e show on the screen
+            self stopGame: Boolean True stop de game or score zero
         """
         print("-----------------THE PLAY´S BEGIN ---------------------------")
         print()
@@ -48,6 +51,11 @@ class Director:
            
 
     def guess_hi_or_lo(self):
+        """
+        Calculate the score if the user guess obtain 100 points
+        if didn´t guessed lost 25 point
+
+        """
         print("------------------------")
         print()
         choice = input("The next cards will be Higher or lower? You must enter 'h' or 'l' ").lower()
@@ -70,15 +78,20 @@ class Director:
                 print("You didn't guess!")
 
         
-      #  self.total_score += self.score
         print(f"Card number: {self.cardnum1}")
         print(f"The next card number was: {self.cardnum2}")
         print(f"teste guess_hi_or_lo: Score is: {self.score}")
         print()
         print("------------------------")
         
-      #  print(f"teste guess_hi_or_lo: Total Score is: {self.total_score}")
     def stopGame(self,score):
+        """
+        Tratament to exit if score were zero
+        or if user insert N 
+
+        Tratament while to continue and to generate
+        object card again  
+        """
        
         if tryagain == "n" or tryagain == "N" or score == 0:
             self.is_stoping = True

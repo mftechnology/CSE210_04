@@ -1,7 +1,12 @@
 from director import Director
 
+"""
+Program develop by Marcelo Duarte
 
-from director import Director
+Call the classe Director and use the object director to star game 
+
+"""
+
 
 director = Director()
 director.start_game()
