@@ -53,7 +53,7 @@ class Director:
     def guess_hi_or_lo(self):
         """
         Calculate the score if the user guess obtain 100 points
-        if didn´t guessed lost 25 point
+        if didn´t guessed lost 75 point
 
         """
         print("------------------------")
