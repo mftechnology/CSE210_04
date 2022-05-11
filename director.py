@@ -51,11 +51,9 @@ class Director:
            
 
     def guess_hi_or_lo(self):
-        """
-        Calculate the score if the user guess obtain 100 points
-        if didn´t guessed lost 75 point
+    #Calculate the score if the user guess obtain 100 points
+    #if didn´t guessed lost 75 point
 
-        """
         print("------------------------")
         print()
         choice = input("The next cards will be Higher or lower? You must enter 'h' or 'l' ").lower()
@@ -85,21 +83,21 @@ class Director:
         print("------------------------")
         
     def stopGame(self,score):
-        """
-        Tratament to exit if score were zero
+        """Tratament to exit if score were zero
         or if user insert N 
 
         Tratament while to continue and to generate
         object card again  
-        """
-       
+    """
+        tryagain = input("Did you play again? [y or n]: ")
+
         if tryagain == "n" or tryagain == "N" or score == 0:
             self.is_stoping = True
             print("Thanks for played!")
             print()
             print("-----------------END GAME ---------------------------")
         else:
-            tryagain = input("Did you play again? [y or n]: ")
+            
             newcard1 = Cards()
             self.cardnum1 =  newcard1.cardnumber
             newcard2 = Cards()
